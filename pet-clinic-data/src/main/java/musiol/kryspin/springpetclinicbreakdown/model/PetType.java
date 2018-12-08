@@ -1,4 +1,4 @@
-package springpetclinicbreakdown.model;
+package musiol.kryspin.springpetclinicbreakdown.model;
 
 public class PetType {
     private String name;
