@@ -1,4 +1,4 @@
-package musiol.kryspin.springpetclinicbreakdown.model;
+package springpetclinicbreakdown.model;
 
 import java.time.LocalDate;
 
