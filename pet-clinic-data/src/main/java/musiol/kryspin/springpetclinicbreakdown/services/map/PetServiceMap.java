@@ -2,9 +2,11 @@ package musiol.kryspin.springpetclinicbreakdown.services.map;
 
 import musiol.kryspin.springpetclinicbreakdown.model.Pet;
 import musiol.kryspin.springpetclinicbreakdown.services.PetService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetService {
 
     @Override

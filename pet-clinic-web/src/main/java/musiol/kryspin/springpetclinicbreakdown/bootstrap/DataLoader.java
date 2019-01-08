@@ -4,8 +4,6 @@ import musiol.kryspin.springpetclinicbreakdown.model.Owner;
 import musiol.kryspin.springpetclinicbreakdown.model.Vet;
 import musiol.kryspin.springpetclinicbreakdown.services.OwnerService;
 import musiol.kryspin.springpetclinicbreakdown.services.VetService;
-import musiol.kryspin.springpetclinicbreakdown.services.map.OwnerServiceMap;
-import musiol.kryspin.springpetclinicbreakdown.services.map.VetServiceMap;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
@@ -15,9 +13,9 @@ public class DataLoader implements CommandLineRunner {
     private final OwnerService ownerService;
     private final VetService vetService;
 
-    public DataLoader() {
-        ownerService = new OwnerServiceMap();
-        vetService = new VetServiceMap();
+    public DataLoader(OwnerService ownerService, VetService vetService) {
+        this.ownerService = ownerService;
+        this.vetService = vetService;
     }
 
     @Override
@@ -46,7 +44,6 @@ public class DataLoader implements CommandLineRunner {
         vet2.setFirstName("Mas");
         vet2.setLastName("Knife");
         vetService.save(vet2);
-
 
     }
 }
