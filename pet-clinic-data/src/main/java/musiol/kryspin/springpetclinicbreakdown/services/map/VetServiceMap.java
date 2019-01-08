@@ -1,11 +1,11 @@
 package musiol.kryspin.springpetclinicbreakdown.services.map;
 
 import musiol.kryspin.springpetclinicbreakdown.model.Vet;
-import musiol.kryspin.springpetclinicbreakdown.services.CrudService;
+import musiol.kryspin.springpetclinicbreakdown.services.VetService;
 
 import java.util.Set;
 
-public class VetServiceMap extends AbstractMapService<Vet, Long> implements CrudService<Vet, Long> {
+public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
 
     @Override
     public Set<Vet> findAll() {
